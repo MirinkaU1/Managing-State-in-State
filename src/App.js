@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
+import logo from './logo.png';
 
 const App = () => {
   // State pour gérer les tâches et la tâche en cours d'édition
@@ -49,7 +50,7 @@ const App = () => {
 
   return (
     <div className="font-mont mt-5 p-6 max-w-lg mx-auto bg-gray-100 rounded-lg shadow-lg">
-      <h1 className="font-poppins text-4xl font-bold text-center mb-6 text-gray-800">note.</h1>
+      <img src={logo} alt="Todo List" className="w-28 h-28 mx-auto -mt-8" />
       {/* Composant du formulaire pour ajouter ou modifier une tâche */}
       <h3 className="font-semibold mb-3 text-lg text-gray-800">Ajouter une tâche</h3>
       <TaskForm
